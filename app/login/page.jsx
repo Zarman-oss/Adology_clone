@@ -5,7 +5,7 @@ export default function LoginPage() {
   return (
     <div className=' text-white'>
       {/* Max-width container */}
-      <div className='max-w-7xl mx-auto sm:flex items-start justify-center gap-4'>
+      <div className='max-w-7xl mx-auto sm:flex items-start justify-center gap-20'>
         {/* Login Section */}
         <div className='flex-1 px-2 py-10 relative rounded-3xl flex flex-col bg-primary-800'>
           <div className='flex flex-col justify-center '>

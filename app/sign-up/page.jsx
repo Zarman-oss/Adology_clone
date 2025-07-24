@@ -1,5 +1,13 @@
 import PasswordInput from '@/components/PasswordInput';
 import Image from 'next/image';
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
+// import './styles.css';
 import Link from 'next/link';
 export default function LoginPage() {
   return (
@@ -70,36 +78,47 @@ export default function LoginPage() {
               </div>
 
               {/* Email and Password Inputs */}
-              <div className=' flex flex-col justify-start items-center gap-6'>
-                <div className='flex gap-5'>
+
+              <form action='submit'>
+                <div className='flex flex-col justify-start items-center gap-6'>
+                  <div className='flex gap-5'>
+                    <input
+                      type='first_name'
+                      placeholder='First Name'
+                      className=' w-full px-6 py-4 rounded-full border border-zinc-600 bg-transparent text-light-silver body-1-regular placeholder:text-light-silver focus:outline-none focus:ring-2 focus:ring-secondary-500'
+                    />
+                    <input
+                      type='last_name'
+                      placeholder='Last Name'
+                      className=' w-full px-6 py-4 rounded-full border border-zinc-600 bg-transparent text-light-silver body-1-regular placeholder:text-light-silver focus:outline-none focus:ring-2 focus:ring-secondary-500'
+                    />
+                  </div>
                   <input
-                    type='first_name'
-                    placeholder='First Name'
+                    type='email'
+                    placeholder='Your email'
                     className=' w-full px-6 py-4 rounded-full border border-zinc-600 bg-transparent text-light-silver body-1-regular placeholder:text-light-silver focus:outline-none focus:ring-2 focus:ring-secondary-500'
                   />
-                  <input
-                    type='last_name'
-                    placeholder='Last Name'
-                    className=' w-full px-6 py-4 rounded-full border border-zinc-600 bg-transparent text-light-silver body-1-regular placeholder:text-light-silver focus:outline-none focus:ring-2 focus:ring-secondary-500'
-                  />
+                  <PasswordInput />
+                  <PasswordInput placeholder='Confirm Password' />
+                  <div className='flex justify-start items-center gap-3 w-full'>
+                    <input
+                      type='checkbox'
+                      name='checkbox'
+                      id='checkbox'
+                      className='w-4 h-4 '
+                    />
+
+                    <p>
+                      Yes, I understand and agree to the Adology Terms of
+                      Service
+                    </p>
+                  </div>
                 </div>
-                <input
-                  type='email'
-                  placeholder='Your email'
-                  className=' w-full px-6 py-4 rounded-full border border-zinc-600 bg-transparent text-light-silver body-1-regular placeholder:text-light-silver focus:outline-none focus:ring-2 focus:ring-secondary-500'
-                />
-                <PasswordInput />
-                <PasswordInput placeholder='Confirm Password' />
-                <div className='flex gap-3'>
-                  <p>
-                    Yes, I understand and agree to the Adology Terms of Service
-                  </p>
-                </div>
-              </div>
+              </form>
             </div>
 
             {/* Login Button and Sign-Up Link */}
-            <div className='flex mt-18 items-center justify-center flex-col gap-6'>
+            <div className='flex mt-8 items-center justify-center flex-col gap-6'>
               <button className=' cursor-pointer w-full px-6 py-4 bg-info-100 rounded-full flex justify-center text-black body-1-semibold items-center hover:bg-info-200'>
                 Create Account
               </button>
@@ -121,15 +140,20 @@ export default function LoginPage() {
         </div>
 
         {/* Image Section */}
-        <div className='flex-1 pl-12 py-10 sm:flex hidden'>
-          <Image
+        <div className='flex-1 pl-12 py-10 sm:flex hidden  border border-pink-600'>
+          {/* <Swiper className='mySwiper'>
+            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>Slide 2</SwiperSlide>
+            <SwiperSlide>Slide 3</SwiperSlide>
+          </Swiper> */}
+          {/* <Image
             src='/LoginPageImage.png'
             alt='Login page illustration'
             width={656}
             height={960}
             className='object-cover rounded-3xl'
             priority
-          />
+          /> */}
         </div>
       </div>
     </div>
