@@ -1,92 +1,113 @@
+import PasswordInput from '@/components/PasswordInput';
+import Image from 'next/image';
+import Link from 'next/link';
 export default function LoginPage() {
   return (
-    <div className='bg-primary-900 text-white min-h-screen'>
-      {/* Max-width containers */}
-      <div className='max-w-7xl p-4 mx-auto sm:flex  items-center justify-center gap-4 sm:flex-wrap '>
+    <div className='bg-primary-900 text-white'>
+      {/* Max-width container */}
+      <div className='max-w-7xl mx-auto sm:flex items-center justify-center gap-4'>
         {/* Login Section */}
-        <div className='flex-1  px-20 py-10 relative rounded-3xl inline-flex flex-col justify-between items-start'>
-          <div className=' left-[106px] top-[257px] absolute opacity-20 bg-blue-200 rounded-full blur-[250px]' />
-          <div className='self-stretch flex flex-col justify-start items-start gap-14'>
-            <div className='inline-flex justify-start items-center gap-2'>
-              <div className='w-6 h-6 relative overflow-hidden'>
-                <div className='w-6 h-6 left-0 top-0 absolute bg-blue-50' />
-                <div className='w-3 h-3 left-0 top-0 absolute bg-blue-50' />
-              </div>
-              <div className="justify-start text-white text-2xl font-medium font-['Manrope'] leading-7">
-                ADOLOGY AI
-              </div>
+        <div className='flex-1 px-2 py-10 sm:px-20  relative rounded-3xl flex flex-col justify-between items-start bg-primary-800'>
+          <div className='flex flex-col justify-center gap-14'>
+            {/* Logo and Title */}
+            <div className='flex justify-start items-center gap-2'>
+              <Image
+                src='/Logo.svg'
+                alt='site logo'
+                width={24}
+                height={24}
+                className='object-cover'
+                priority
+              />
+              <span className='heading-5-medium'>ADOLOGY AI</span>
             </div>
-            <div className='self-stretch flex flex-col justify-start items-start gap-8'>
-              <div className='self-stretch flex flex-col justify-center items-center gap-4'>
-                <div className="self-stretch justify-start text-white text-5xl font-medium font-['Manrope'] leading-[57.60px]">
-                  Login an account
-                </div>
-                <div className="self-stretch justify-start text-white text-lg font-normal font-['Manrope'] leading-relaxed">
-                  Describe yourself as clearly so that there are no mistakes
-                </div>
-              </div>
-              <div className='self-stretch flex flex-col justify-start items-center gap-6'>
-                <div className='self-stretch px-6 py-4 rounded-[100px] outline outline-[0.50px] outline-offset-[-0.50px] outline-zinc-600 inline-flex justify-center items-center gap-2'>
-                  <div className='w-6 h-6 relative overflow-hidden'>
-                    <div className='w-4 h-4 left-[4.41px] top-[3px] absolute bg-white' />
-                  </div>
-                  <div className="justify-start text-white text-lg font-semibold font-['Manrope'] leading-relaxed">
-                    Continue with Apple
-                  </div>
-                </div>
-                <div className='self-stretch px-6 py-4 rounded-[100px] outline outline-[0.50px] outline-offset-[-0.50px] outline-zinc-600 inline-flex justify-center items-center gap-2'>
-                  <div className='w-6 h-6 relative overflow-hidden'>
-                    <div className='w-5 h-5 left-[2px] top-[2px] absolute bg-yellow-400' />
-                    <div className='w-4 h-2 left-[3.15px] top-[2px] absolute bg-orange-600' />
-                    <div className='w-4 h-2 left-[3.10px] top-[14.03px] absolute bg-green-500' />
-                    <div className='w-2.5 h-2.5 left-[12px] top-[10px] absolute bg-sky-600' />
-                  </div>
-                  <div className="justify-start text-white text-lg font-semibold font-['Manrope'] leading-relaxed">
-                    Continue with Google
-                  </div>
-                </div>
-              </div>
-              <div className='self-stretch inline-flex justify-start items-center gap-2'>
-                <div className='flex-1 h-0 outline outline-1 outline-offset-[-0.50px] outline-zinc-600' />
-                <div className="justify-start text-white text-lg font-normal font-['Manrope'] leading-relaxed">
-                  or
-                </div>
-                <div className='flex-1 h-0 outline outline-1 outline-offset-[-0.50px] outline-zinc-600' />
-              </div>
-              <div className='self-stretch flex flex-col justify-start items-start gap-6'>
-                <div className='self-stretch h-14 px-6 py-4 rounded-[100px] outline outline-[0.50px] outline-offset-[-0.50px] outline-zinc-600 inline-flex justify-start items-center gap-2'>
-                  <div className="justify-start text-zinc-500 text-lg font-normal font-['Manrope'] leading-relaxed">
-                    Your email
-                  </div>
-                </div>
-                <div className='self-stretch h-14 px-6 py-4 rounded-[100px] outline outline-[0.50px] outline-offset-[-0.50px] outline-zinc-600 inline-flex justify-between items-center'>
-                  <div className="justify-start text-zinc-500 text-lg font-normal font-['Manrope'] leading-relaxed">
-                    Password
-                  </div>
-                  <div className='w-6 h-6 relative overflow-hidden'>
-                    <div className='w-5 h-4 left-[2px] top-[4px] absolute bg-white' />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='self-stretch flex flex-col justify-start items-start gap-6'>
-            <div className='self-stretch px-6 py-4 bg-white rounded-[100px] inline-flex justify-center items-center gap-2'>
-              <div className="justify-start text-stone-950 text-lg font-semibold font-['Manrope'] leading-relaxed">
-                Login to Account
-              </div>
-            </div>
-            <div className='self-stretch text-center justify-start'>
-              <span className="text-white text-lg font-normal font-['Manrope'] leading-relaxed">
-                Already have an account?{' '}
+
+            {/* Heading and Description */}
+            <div className='flex flex-col justify-center items-start gap-4'>
+              <span className='heading-1-medium'>Login an Account</span>
+              <span className=' body-1-regular text-light-silver'>
+                Describe yourself as clearly so that there are no mistakes
               </span>
-              <span className="text-white text-lg font-semibold font-['Manrope'] leading-relaxed">
-                Create An Account
-              </span>
+            </div>
+            {/* Social Login Buttons */}
+            <div className=' flex flex-col justify-start items-center gap-6'>
+              <button
+                className=' cursor-pointer w-full px-6 py-4 rounded-full border border-zinc-600 flex justify-center items-center gap-2 hover:bg-primary-700'
+                aria-label='Continue with Apple'
+              >
+                <Image
+                  src='/apple.svg'
+                  alt='Login page illustration'
+                  width={24}
+                  height={24}
+                  className='object-cover'
+                  priority
+                />
+                <span className='body-1-semibold'>Continue with Apple</span>
+              </button>
+              <button
+                className=' cursor-pointer w-full px-6 py-4 rounded-full border border-zinc-600 flex justify-center items-center gap-2 hover:bg-primary-700'
+                aria-label='Continue with Google'
+              >
+                <Image
+                  src='/google.svg'
+                  alt='Login page illustration'
+                  width={24}
+                  height={24}
+                  className='object-cover'
+                  priority
+                />
+                <span className='body-1-semibold '>Continue with Google</span>
+              </button>
+            </div>
+            {/* Divider */}
+            <div className=' flex items-center gap-2'>
+              <hr className='flex-1 border-t border-zinc-600' />
+              <span className='body-1-regular text-light-silver'>or</span>
+              <hr className='flex-1 border-t border-zinc-600' />
+            </div>
+            {/* Email and Password Inputs */}
+            <div className=' flex flex-col justify-start items-center gap-6'>
+              <input
+                type='email'
+                placeholder='Your email'
+                className=' w-full px-6 py-4 rounded-full border border-zinc-600 bg-transparent text-light-silver body-1-regular placeholder:text-light-silver focus:outline-none focus:ring-2 focus:ring-secondary-500'
+              />
+              <PasswordInput />
+            </div>
+
+            {/* Login Button and Sign-Up Link */}
+            <div className='flex items-center justify-center flex-col gap-6'>
+              <button className=' cursor-pointer w-full px-6 py-4 bg-info-100 rounded-full flex justify-center text-black body-1-semibold items-center hover:bg-info-200'>
+                Login to account
+              </button>
+
+              <div className='flex gap-1'>
+                <span className='body-1-regular text-light-silver'>
+                  Already have an account?
+                </span>
+
+                <Link
+                  href='/sign-up'
+                  className='body-1-semibold text-secondary-300 hover:text-secondary-400'
+                >
+                  Create an Account
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <div className='flex-1'>img</div>
+        {/* Image Section */}
+        <div className='flex-1 hidden sm:block'>
+          <Image
+            src='/LoginPageImage.png'
+            alt='Login page illustration'
+            width={656}
+            height={960}
+            className='object-cover rounded-3xl'
+            priority
+          />
+        </div>
       </div>
     </div>
   );
