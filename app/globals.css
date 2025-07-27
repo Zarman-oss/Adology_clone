@@ -977,36 +977,27 @@ body {
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-/* Sign-up login page Image  */
+/* misc classes */
 
-.login-image {
+.glow-background {
+  width: 509px;
+  height: 509px;
+  position: absolute;
+  left: 106px;
+  top: 258px;
+  opacity: 0.2;
+  background-color: #bfdbfe;
+  border: 1px solid black;
+  border-radius: 9999px;
+  filter: blur(250px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* global.css */
+.image-section-bg {
   background-image: url('/LoginPageImage.png');
   background-size: cover;
   background-position: center;
-  border-radius: 1.5rem;
-  object-fit: contain;
-  height: 100vh;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-repeat: no-repeat;
 }
