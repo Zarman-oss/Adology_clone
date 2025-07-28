@@ -1,21 +1,48 @@
+'use client';
 import PasswordInput from '@/components/PasswordInput';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-
-// import './styles.css';
 import Link from 'next/link';
 export default function LoginPage() {
+  const testimonials = [
+    {
+      quote:
+        'Adology transformed our ad strategies with research-driven insights, boosting engagement and performance. Excited to continue working with them!',
+      author: 'Sarah J - VP of Marketing',
+      image: '/LoginPageImage.png',
+    },
+    {
+      quote:
+        'The AI-driven insights from Adology have revolutionized our campaigns, delivering unmatched results.',
+      author: 'Michael T - CMO',
+      image: '/pic1.jpg',
+    },
+    {
+      quote:
+        'With Adology, our ad performance skyrocketed thanks to their innovative approach and expertise.',
+      author: 'Emily R - Marketing Director',
+      image: '/pic1.jpg',
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000); // every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className=' text-white'>
       {/* Max-width container */}
-      <div className='max-w-7xl mx-auto sm:flex items-start justify-center gap-20'>
+      <div className='max-w-7xl mx-auto grid sm:grid-cols-2 items-start justify-center gap-20'>
         {/* Login Section */}
-        <div className='flex-1 px-2 py-10 relative rounded-3xl flex flex-col bg-primary-800'>
+        <div className='px-2 py-10 relative rounded-3xl flex flex-col'>
+          <span className='glow-background'></span>
           <div className='flex flex-col justify-center '>
             {/* Logo and Title */}
             <div className='flex mb-14 justify-start items-center gap-2'>
@@ -138,22 +165,34 @@ export default function LoginPage() {
             </div>
           </div>
         </div>
+        {/* Carousel Section */}
+        <div
+          className='py-12 px-2 sm:flex hidden relative transition-all duration-1000 ease-in-out bg-cover bg-center h-screen'
+          style={{
+            backgroundImage: `url(${testimonials[currentIndex].image})`,
+          }}
+        >
+          <span className='absolute inset-0  bg-opacity-60'></span>
 
-        {/* Image Section */}
-        <div className='flex-1 pl-12 py-10 sm:flex hidden  border border-pink-600'>
-          {/* <Swiper className='mySwiper'>
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-          </Swiper> */}
-          {/* <Image
-            src='/LoginPageImage.png'
-            alt='Login page illustration'
-            width={656}
-            height={960}
-            className='object-cover rounded-3xl'
-            priority
-          /> */}
+          <div className='relative z-10 flex flex-col justify-end items-center gap-4 text-center text-white'>
+            <p className='heading-4-regular max-w-lg'>
+              "{testimonials[currentIndex].quote}"
+            </p>
+            <p className='heading-4-semibold'>
+              {testimonials[currentIndex].author}
+            </p>
+
+            <div className='flex flex-wrap gap-4 mt-4'>
+              {testimonials.map((_, index) => (
+                <span
+                  key={index}
+                  className={`h-1.5 w-8 rounded-full transition-all duration-300 ${
+                    currentIndex === index ? 'bg-white' : 'bg-zinc-600'
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

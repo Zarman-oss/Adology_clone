@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 
 const geistSans = Geist({
@@ -11,6 +11,11 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const jakarta_Sans = Plus_Jakarta_Sans({
+  variable: '--font-jakarta-sans',
+  subsets: ['latin'],
+});
+
 export const metadata = {
   title: 'Adology',
   description: 'Customize ads for your customers',
@@ -20,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary-900 ${jakarta_Sans.variable}`}
       >
         {children}
       </body>

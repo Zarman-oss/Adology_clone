@@ -1,5 +1,11 @@
-import LoginPage from '@/app/login/page';
+import Hero from '@/components/Hero';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
-  return <LoginPage />;
+  return (
+    <div className='section-container'>
+      <Navbar />
+      <Hero />
+    </div>
+  );
 }
