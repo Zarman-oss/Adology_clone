@@ -45,13 +45,7 @@ export default function LoginPage() {
           <div className='flex flex-col justify-center'>
             {/* Logo */}
             <div className='flex mb-10 items-center gap-2'>
-              <Image
-                src='/Logo.svg'
-                alt='site logo'
-                width={24}
-                height={24}
-                priority
-              />
+              <Image src='/Logo.svg' alt='site logo' width={24} height={24} />
               <span className='heading-5-medium'>ADOLOGY AI</span>
             </div>
 

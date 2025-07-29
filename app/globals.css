@@ -15,6 +15,17 @@
 }
 
 @layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
 }
 
 @layer components {
@@ -24,8 +35,9 @@
 }
 
 :root {
-  --background: oklch(0.15 0.02 240);
+  --background: #111111;
   --foreground: oklch(0.95 0.01 240);
+
   --font-size-overline-2: 10px;
   --font-size-overline-1: 12px;
   --font-size-caption-2: 12px;
@@ -44,6 +56,18 @@
   --line-height-auto: normal;
   --line-height-140: 140%;
   --line-height-120: 120%;
+
+  /* Primary-white */
+  --white-900: #575859;
+  --white-800: #707172;
+  --white-700: #959798;
+  --white-600: #bbbcbf;
+  --white-500: #c7c9cb;
+  --white-400: #e0e2e5;
+  --white-300: #f9fbfe;
+  --white-200: #fdfeff;
+  --white-100: #fefeff;
+  --white-50: #feffff;
 
   /* Primary - Black */
   --primary-900: #060606;
@@ -123,6 +147,10 @@
   --text-light-silver: #d9d9d9;
   --text-flash-white: #f0f0f0;
   --text-white: #ffffff;
+
+  /* other colors */
+  --grey-900: #212121;
+  --grey-800: #404141;
 }
 
 /* Base font settings */
@@ -131,6 +159,7 @@ body {
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--background);
 }
 
 /* Monospace utility for code or specific elements */
@@ -1022,16 +1051,31 @@ body {
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-/* misc classes */
+/* other classes */
+.modules-section-icons-bg {
+  background-color: #404141;
+}
+.feature-card-icon-bg {
+  background-color: var(--grey-800);
+}
+
+/* works section card bg */
+
+.card-grey {
+  background-color: var(--grey-900);
+}
+.card-black {
+  background-color: var(--primary-500);
+}
 
 .glow-background {
-  width: 30vw;
-  height: 30vw;
+  width: 40vw;
+  height: 40vw;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 100%;
   transform: translate(-50%, -50%);
-  opacity: 0.3;
+  opacity: 0.2;
   background-color: #bfdbfe;
   border: 1px solid black;
   border-radius: 9999px;
