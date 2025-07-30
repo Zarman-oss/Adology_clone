@@ -1113,3 +1113,28 @@ body {
     display: none;
   }
 }
+
+/* styles/Gradient.module.css */
+.gradient {
+  background: linear-gradient(
+    to right,
+    rgba(62, 62, 62, 0.2),
+    rgba(31, 31, 31, 1) 37%,
+    rgba(31, 31, 31, 0.5) 66%,
+    rgba(62, 62, 62, 0.2)
+  );
+
+  width: 100%; /* Full width */
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+}
