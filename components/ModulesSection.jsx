@@ -1,14 +1,20 @@
 import PrimaryButton from '@/components/ui/PrimaryButton';
 import {
-  SearchIcon,
   LightbulbIcon,
+  LucideLock,
+  LucideMedal,
+  LucideSearch,
+  LucideVolleyball,
   MessageCircle,
+  SearchIcon,
   Settings,
 } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ModulesSection() {
   return (
-    <section>
+    <section className='relative'>
+      <span className='glow-background'></span>
       <article className='flex flex-col items-center text-center gap-4 mt-24'>
         <h2 className='heading-3-medium text-white'>
           Adology Scales & Streamlines Brands Access to Creative Data
@@ -25,38 +31,165 @@ export default function ModulesSection() {
           Creative Intelligence at Scale
         </h2>
         {/* Icons */}
-        <div className='flex flex-wrap gap-6'>
-          <div className='p-3 bg-white rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
+        <div className='flex flex-wrap justify-center items-center gap-6'>
+          {/* first icon */}
+          <div className='p-3 cursor-pointer bg-white rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
             <span className='w-8 h-8'>
               <SearchIcon className='h-8 w-8 ' color='black' />
             </span>
           </div>
           {/* 2nd icon */}
-          <div className='p-3 modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
+          <div className='p-3 cursor-pointer modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
             <span className='w-8 h-8'>
               <LightbulbIcon className='h-8 w-8 ' color='white' />
             </span>
           </div>
-          <div className='p-3 modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
+          {/* third icon */}
+          <div className='p-3 cursor-pointer modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
             <span className='w-8 h-8'>
               <MessageCircle className='h-8 w-8 ' color='white' />
             </span>
           </div>
-          <div className='p-3 modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
+          {/* fourth icon */}
+          <div className='p-3 cursor-pointer modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
             <span className='w-8 h-8'>
               <Settings className='h-8 w-8 ' color='white' />
             </span>
           </div>
-          <div className='p-3 modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
+          {/* fifth icon */}
+          <div className='p-3 cursor-pointer modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
             <span className='w-8 h-8'>
               <LightbulbIcon className='h-8 w-8 ' color='white' />
             </span>
           </div>
-          <div className='p-3 modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
+          {/* sixth icon */}
+          <div className='p-3 cursor-pointer modules-section-icons-bg rounded-[55.56px] outline-[0.56px] flex  items-center gap-1'>
             <span className='w-8 h-8'>
               <LightbulbIcon className='h-8 w-8 ' color='white' />
             </span>
           </div>
+        </div>
+        {/* Carousel */}
+        <div className='max-w-[1100px] w-full p-10 relative'>
+          <span className='absolute inset-0 bg-gradient-to-r from-[#3E3E3E] via-[#1F1F1F] via-66% to-[#3E3E3E] opacity-30 rounded-2xl '></span>
+
+          <div className='relative z-10'>
+            <div className='flex justify-center items-center text-center gap-4 p-4'>
+              {/* Icon */}
+              <div className='p-3 cursor-pointer bg-white rounded-[55.56px] outline-[0.56px] flex items-center gap-1'>
+                <span className='w-8 h-8'>
+                  <SearchIcon className='h-8 w-8' color='black' />
+                </span>
+              </div>
+              {/* Title */}
+              <h2 className='heading-2-medium text-white'>Inspire</h2>
+            </div>
+
+            {/* Card text */}
+            <div className='flex flex-col justify-start items-center gap-6'>
+              <p className='text-center text-white heading-2-medium leading-10'>
+                Scans millions of ads, identifying emerging trends before they
+                peak
+              </p>
+              <p className='text-center leading-relaxed body-1-regular text-grey'>
+                Explore the latest trending ads and creative strategies across
+                industries. Our inspiration feature <br />
+                clusters ads by tactics and themes, helping you discover what's
+                working in real-time.
+              </p>
+              <div className='px-6 py-4 bg-zinc-900 rounded-[100px] outline-1 outline-white/20 inline-flex justify-start items-center gap-2'>
+                <span className='text-white body-1-regular leading-relaxed'>
+                  Discover Creative Inspiration
+                </span>
+                <Image
+                  className='cursor-pointer'
+                  width={24}
+                  height={24}
+                  alt='arrow-right'
+                  src='arrow-right.svg'
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Cards container */}
+          <div className='w-full flex flex-wrap items-center justify-center gap-8'>
+            {/* card */}
+            <div className='  max-w-[310px] w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-4'>
+              <h3 className='heading-5-medium text-white text-center'>
+                Browse Inspiration
+              </h3>
+            </div>
+            {/* card 2 */}
+            <div className='max-w-[310px] flex flex-col gap-2 w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-2'>
+              <h3 className='heading-5-medium text-white text-center'>
+                Browse Inspiration
+              </h3>
+              {/* inside card */}
+              <div className=' bg-[#1B1B1B] p-4 flex flex-col items-center  justify-center gap-4 rounded-lg'>
+                {/* title */}
+                <div className='flex w-full items-center justify-between gap-1'>
+                  <div className='flex gap-1'>
+                    <LucideVolleyball color='white' height={14} width={14} />
+                    <h4 className='text-white jakarta-sm capitalize'>
+                      Football and team sport
+                    </h4>
+                  </div>
+                  {/* Search */}
+                  <div className='px-1 py-1 bg-white rounded-[37.04px] flex justify-start items-center gap-[2.96px]'>
+                    <LucideSearch width={8} height={8} />
+                    <h5 className='text-black jakarta-xs leading-[9.33px]'>
+                      Search Trends
+                    </h5>
+                  </div>
+                </div>
+                <h4 className='jakarta-sm text-white  text-start w-full '>
+                  Highlighting Product Benefits with Visual Proof
+                </h4>
+                <p className='text-light-silver jakarta-xs '>
+                  A recurring trend in the advertisements from Abercrombie &
+                  Fitch, New Balance, Nike, and Under Armour is the focus on
+                  sports and athleticism. These ads prominently feature
+                  athletes, sports settings, and themes of perseverance,
+                  strength, and excellence. 
+                </p>
+                {/* section container */}
+                <div className='w-full'>
+                  {/* title */}
+                  <div className='flex gap-1 items-center justify-start'>
+                    <LucideMedal width={11} height={11} color='white' />
+                    <p className='text-white jakarta-sm'>
+                      The best ads on this trend
+                    </p>
+                  </div>
+                  {/* card container */}
+                  <div className='max-w-[180px]'>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Hic iure sit corrupti et quos! Culpa molestias quaerat
+                      earum maxime quo dicta accusantium, quod, odio excepturi
+                      iste obcaecati in numquam. Non.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* card 3 */}
+            <div className='  max-w-[310px] w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-4'>
+              <h3 className='heading-5-medium text-white text-center'>
+                Browse Inspiration
+              </h3>
+            </div>
+          </div>
+        </div>
+        {/* Indicators */}
+        <div className='flex flex-wrap justify-center items-center gap-4'>
+          <span className='w-20 h-2 bg-white rounded-[100px]' />
+          <span className='min-w-20 h-2 bg-white/20 rounded-[100px]' />
+          <span className='min-w-20 h-2 bg-white/20 rounded-[100px]' />
+          <span className='w-20 h-2 bg-white/20 rounded-[100px]' />
+          <span className='w-20 h-2 bg-white/20 rounded-[100px]' />
+          <span className='w-20 h-2 bg-white/20 rounded-[100px]' />
         </div>
       </div>
     </section>

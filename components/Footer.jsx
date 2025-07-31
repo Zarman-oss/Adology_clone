@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className='px-4 sm:px-8 lg:px-16 py-12 bg-gradient-to-r from-neutral-700/20 via-stone-900 to-neutral-700/20 flex flex-col items-center gap-8 w-full'>
+    <footer className='mt-24 px-4 sm:px-8 lg:px-16 py-12 bg-gradient-to-r from-neutral-700/20 via-stone-900 to-neutral-700/20 flex flex-col items-center gap-8 w-full'>
       <div className='flex flex-col items-start gap-8  max-w-7xl w-full'>
         <div className='flex flex-col lg:flex-row justify-between items-center gap-6 w-full'>
           <div className='flex flex-col items-start gap-4'>

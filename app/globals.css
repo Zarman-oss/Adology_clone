@@ -175,6 +175,19 @@ body {
   font-weight: 500;
 }
 
+.jakarta-sm {
+  font-family: var(--font-jakarta-sans);
+  font-size: 12px;
+  line-height: var(--line-height-auto);
+  font-weight: 500;
+}
+.jakarta-xs {
+  font-family: var(--font-jakarta-sans);
+  font-size: 6px;
+  line-height: var(--line-height-auto);
+  font-weight: 500;
+}
+
 .jakarta-semibold-2 {
   font-size: 36px;
   font-weight: 600;
