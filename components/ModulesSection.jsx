@@ -1,7 +1,6 @@
 import PrimaryButton from '@/components/ui/PrimaryButton';
 import {
   LightbulbIcon,
-  LucideLock,
   LucideMedal,
   LucideSearch,
   LucideVolleyball,
@@ -97,10 +96,10 @@ export default function ModulesSection() {
                 clusters ads by tactics and themes, helping you discover what's
                 working in real-time.
               </p>
-              <div className='px-6 py-4 bg-zinc-900 rounded-[100px] outline-1 outline-white/20 inline-flex justify-start items-center gap-2'>
-                <span className='text-white body-1-regular leading-relaxed'>
+              <div className='max-w-[320px] w-full px-6 py-4 bg-zinc-900 mb-12 rounded-[100px] outline-1 outline-white/20 inline-flex justify-start items-center gap-2'>
+                <p className='text-white body-1-regular leading-relaxed'>
                   Discover Creative Inspiration
-                </span>
+                </p>
                 <Image
                   className='cursor-pointer'
                   width={24}
@@ -114,11 +113,163 @@ export default function ModulesSection() {
 
           {/* Cards container */}
           <div className='w-full flex flex-wrap items-center justify-center gap-8'>
-            {/* card */}
-            <div className='  max-w-[310px] w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-4'>
+            {/* card 1*/}
+            <div className='max-w-[310px] flex flex-col gap-2 w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-2'>
               <h3 className='heading-5-medium text-white text-center'>
                 Browse Inspiration
               </h3>
+              {/* inside card */}
+              <div className=' bg-[#1B1B1B] p-4 flex flex-col items-center  justify-center gap-4 rounded-lg'>
+                {/* title */}
+                <div className='flex w-full items-center justify-between gap-1'>
+                  <div className='flex gap-1'>
+                    <LucideVolleyball color='white' height={14} width={14} />
+                    <h4 className='text-white jakarta-sm capitalize'>
+                      Football and team sport
+                    </h4>
+                  </div>
+                  {/* Search */}
+                  <div className='px-1 py-1 bg-white rounded-[37.04px] flex justify-start items-center gap-[2.96px]'>
+                    <LucideSearch width={8} height={8} />
+                    <h5 className='text-black jakarta-xs leading-[9.33px]'>
+                      Search Trends
+                    </h5>
+                  </div>
+                </div>
+                <h4 className='jakarta-sm text-white  text-start w-full '>
+                  Highlighting Product Benefits with Visual Proof
+                </h4>
+                <p className='text-light-silver jakarta-xs '>
+                  A recurring trend in the advertisements from Abercrombie &
+                  Fitch, New Balance, Nike, and Under Armour is the focus on
+                  sports and athleticism. These ads prominently feature
+                  athletes, sports settings, and themes of perseverance,
+                  strength, and excellence. 
+                </p>
+                {/* section container */}
+
+                {/* title */}
+                <div className='flex gap-1 items-center justify-start'>
+                  <LucideMedal width={11} height={11} color='white' />
+                  <p className='text-white jakarta-sm text-start w-full'>
+                    The best ads on this trend
+                  </p>
+                </div>
+                {/* card container */}
+                <div className='max-w-[300px] w-full flex flex-wrap items-center justify-center gap-2'>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
+                  </div>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
+                  </div>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             {/* card 2 */}
             <div className='max-w-[310px] flex flex-col gap-2 w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-2'>
@@ -154,31 +305,287 @@ export default function ModulesSection() {
                   strength, and excellence. 
                 </p>
                 {/* section container */}
-                <div className='w-full'>
-                  {/* title */}
-                  <div className='flex gap-1 items-center justify-start'>
-                    <LucideMedal width={11} height={11} color='white' />
-                    <p className='text-white jakarta-sm'>
-                      The best ads on this trend
-                    </p>
+
+                {/* title */}
+                <div className='flex gap-1 items-center justify-start'>
+                  <LucideMedal width={11} height={11} color='white' />
+                  <p className='text-white jakarta-sm text-start w-full'>
+                    The best ads on this trend
+                  </p>
+                </div>
+                {/* card container */}
+                <div className='max-w-[300px] w-full flex flex-wrap items-center justify-center gap-2'>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
                   </div>
-                  {/* card container */}
-                  <div className='max-w-[180px]'>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Hic iure sit corrupti et quos! Culpa molestias quaerat
-                      earum maxime quo dicta accusantium, quod, odio excepturi
-                      iste obcaecati in numquam. Non.
-                    </p>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
+                  </div>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             {/* card 3 */}
-            <div className='  max-w-[310px] w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-4'>
+            <div className='max-w-[310px] flex flex-col gap-2 w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-2'>
               <h3 className='heading-5-medium text-white text-center'>
                 Browse Inspiration
               </h3>
+              {/* inside card */}
+              <div className=' bg-[#1B1B1B] p-4 flex flex-col items-center  justify-center gap-4 rounded-lg'>
+                {/* title */}
+                <div className='flex w-full items-center justify-between gap-1'>
+                  <div className='flex gap-1'>
+                    <LucideVolleyball color='white' height={14} width={14} />
+                    <h4 className='text-white jakarta-sm capitalize'>
+                      Football and team sport
+                    </h4>
+                  </div>
+                  {/* Search */}
+                  <div className='px-1 py-1 bg-white rounded-[37.04px] flex justify-start items-center gap-[2.96px]'>
+                    <LucideSearch width={8} height={8} />
+                    <h5 className='text-black jakarta-xs leading-[9.33px]'>
+                      Search Trends
+                    </h5>
+                  </div>
+                </div>
+                <h4 className='jakarta-sm text-white  text-start w-full '>
+                  Highlighting Product Benefits with Visual Proof
+                </h4>
+                <p className='text-light-silver jakarta-xs '>
+                  A recurring trend in the advertisements from Abercrombie &
+                  Fitch, New Balance, Nike, and Under Armour is the focus on
+                  sports and athleticism. These ads prominently feature
+                  athletes, sports settings, and themes of perseverance,
+                  strength, and excellence. 
+                </p>
+                {/* section container */}
+
+                {/* title */}
+                <div className='flex gap-1 items-center justify-start'>
+                  <LucideMedal width={11} height={11} color='white' />
+                  <p className='text-white jakarta-sm text-start w-full'>
+                    The best ads on this trend
+                  </p>
+                </div>
+                {/* card container */}
+                <div className='max-w-[300px] w-full flex flex-wrap items-center justify-center gap-2'>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
+                  </div>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
+                  </div>
+                  <div className='flex-1 inner-card-bg rounded-lg '>
+                    {/* title */}
+                    <div className='flex items-center justify-between p-1'>
+                      <h6 className='jakarta-xs text-white'>Nike</h6>
+                      <div className='flex gap-1 items-center'>
+                        <span className='w-[2.96px] h-[2.96px] bg-success-300 rounded-full' />
+                        <span className='jakarta-xs text-white'>5d</span>
+                        <Image src='dots.svg' width={7} height={7} alt='dots' />
+                      </div>
+                    </div>
+                    <Image
+                      src='/pic3.png'
+                      width={200}
+                      height={200}
+                      objectFit='contain'
+                      alt='pic'
+                    />
+                    <div className='p-1 flex justify-between items-center'>
+                      <div className='flex flex-col'>
+                        <p className='jakarta-xxs text-light-silver'>
+                          www.nike.com
+                        </p>
+                        <p className='text-white jakarta-xxs'>
+                          Nike Air Max Plus Drift
+                        </p>
+                      </div>
+
+                      <button className='p-[2px] text-black jakarta-xxs inner-shop-button rounded-lg '>
+                        Shop Now
+                      </button>
+                    </div>
+                    <div className='flex p-1 '>
+                      <button className='bg-white w-full rounded-xl jakarta-xxs p-1 text-black'>
+                        Save to Inspiration
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

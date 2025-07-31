@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
         <div className='w-full border-t border-gray-400/50' />
       </div>
-      <div className='w-full max-w-7xl rounded-2xl backdrop-blur-[50px] flex flex-col sm:flex-row justify-between items-center gap-4 p-4 w-full'>
+      <div className='w-full max-w-7xl rounded-2xl backdrop-blur-[50px] flex flex-col sm:flex-row justify-between items-center gap-4 p-4 '>
         <div className="text-white text-base body-1-medium'">
           © 2025 Adology. All rights reserved.
         </div>

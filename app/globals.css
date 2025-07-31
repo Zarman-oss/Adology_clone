@@ -151,6 +151,7 @@
   /* other colors */
   --grey-900: #212121;
   --grey-800: #404141;
+  --grey-700: #555556;
 }
 
 /* Base font settings */
@@ -184,6 +185,12 @@ body {
 .jakarta-xs {
   font-family: var(--font-jakarta-sans);
   font-size: 6px;
+  line-height: var(--line-height-auto);
+  font-weight: 500;
+}
+.jakarta-xxs {
+  font-family: var(--font-jakarta-sans);
+  font-size: 4px;
   line-height: var(--line-height-auto);
   font-weight: 500;
 }
@@ -1065,6 +1072,14 @@ body {
 }
 
 /* other classes */
+.inner-shop-button {
+  background-color: var(--white-400);
+}
+
+.inner-card-bg {
+  background-color: var(--grey-700);
+}
+
 .modules-section-icons-bg {
   background-color: #404141;
 }
