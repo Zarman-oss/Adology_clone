@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function SuccessStory() {
   return (
-    <section className='flex flex-col relative items-center mt-34'>
+    <section className='flex flex-col relative items-center mt-34 gap-12'>
       <span className='glow-background'></span>
       <PrimaryButton text='Success Stories' />
       <h2 className='heading-1-medium text-white text-center'>

@@ -1059,6 +1059,10 @@ body {
   background-color: var(--grey-800);
 }
 
+.bg-divider {
+  background-color: var(--white-900);
+}
+
 /* works section card bg */
 
 .card-grey {
