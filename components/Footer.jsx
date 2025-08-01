@@ -6,10 +6,10 @@ export default function Footer() {
       <div className='flex flex-col items-start gap-8  max-w-7xl w-full'>
         <div className='flex flex-col lg:flex-row justify-between items-center gap-6 w-full'>
           <div className='flex flex-col items-start gap-4'>
-            <h2 className='heading-1-semibold text-3xl leading-tight text-grey'>
+            <h2 className='heading-1-semibold heading-3-semibold sm:heading-1-semibold leading-tight text-grey'>
               Ready to Optimize
             </h2>
-            <h2 className='text-white text-3xl sm:text-4xl heading-1-semibold leading-tight'>
+            <h2 className='text-white heading-3-semibold sm:heading-1-semibold leading-tight'>
               Your Campaigns?
             </h2>
             <p className='text-white heading-5-regular leading-relaxed'>
@@ -22,7 +22,7 @@ export default function Footer() {
                 Request Demo
               </h3>
               <Image
-                className='absolute top-0 bottom-0 left-[95%] sm:h-[72px] sm:w-[72px]'
+                className='absolute top-0 bottom-0 left-[90%] sm:h-[72px] sm:w-[72px]'
                 src='footerarrow.svg'
                 width={40}
                 height={40}

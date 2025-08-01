@@ -1100,6 +1100,22 @@ body {
   background-color: var(--primary-500);
 }
 
+.glow-background-2 {
+  width: 40vw;
+  height: 30vw;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  background-color: #bfdbfe;
+  border: 1px solid black;
+  border-radius: 9999px;
+  filter: blur(15vw);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .glow-background {
   width: 40vw;
   height: 40vw;

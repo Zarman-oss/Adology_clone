@@ -26,7 +26,7 @@ export default function ModulesSection() {
       </article>
       <div className='mt-34 flex flex-col items-center gap-12'>
         <PrimaryButton text='Modules' />
-        <h2 className='heading-1-medium text-white'>
+        <h2 className='heading-1-medium text-white text-center'>
           Creative Intelligence at Scale
         </h2>
         {/* Icons */}
@@ -112,7 +112,7 @@ export default function ModulesSection() {
           </div>
 
           {/* Cards container */}
-          <div className='w-full flex flex-wrap items-center justify-center gap-8'>
+          <div className='flex flex-wrap items-center justify-center gap-8'>
             {/* card 1*/}
             <div className='max-w-[310px] flex flex-col gap-2 w-full rounded-2xl bg-gradient-to-r from-neutral-700/60 via-zinc-800/60 to-neutral-700/60 relative p-2'>
               <h3 className='heading-5-medium text-white text-center'>

@@ -10,8 +10,8 @@ export default function SuccessStory() {
         Trusted by Leading Brands and Agencies
       </h2>
       {/* testimonials */}
-      <div className='max-w-[1200px] w-full p-8 flex flex-col gap-12 grad gradient rounded-xl'>
-        <p className='jakarta text-light-silver '>
+      <div className='max-w-[1200px] w-full p-6 flex flex-col gap-12 grad gradient rounded-xl'>
+        <p className='jakarta text-light-silver'>
           “Adology has transformed our approach to ad creatives. The trend
           detection and performance scoring helped us boost our ad win rate by
           40% and scale by 5X in just three months. Highly recommend!”
