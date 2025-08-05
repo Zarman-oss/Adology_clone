@@ -1,6 +1,6 @@
 import { LucideMegaphone } from 'lucide-react';
-import PrimaryButton from './ui/PrimaryButton';
 import Image from 'next/image';
+import PrimaryButton from './ui/PrimaryButton';
 
 const bulletPoints = [
   'Access to detailed creative analysis for smarter ad spend decisions.',
@@ -14,7 +14,7 @@ function TeamCard({ title, description }) {
   return (
     <div className='w-full lg:w-[48%] xl:w-[30%] p-8 rounded-2xl bg-gradient-to-r from-neutral-700/20 via-stone-900 to-neutral-700/20'>
       <div className='flex flex-col items-start gap-4'>
-        <span className='p-3 bg-neutral-700 rounded-full outline outline-1 outline-zinc-700 inline-flex items-center'>
+        <span className='p-3 bg-neutral-700 rounded-full  outline-1 outline-zinc-700 inline-flex items-center'>
           <LucideMegaphone color='white' />
         </span>
         <h2 className='heading-4-medium text-white'>{title}</h2>
